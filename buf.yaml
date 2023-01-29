@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/jobilla/appevents
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
+  except:
+    - PACKAGE_VERSION_SUFFIX

@@ -1,0 +1,9 @@
+syntax="proto3";
+option go_package="github.com/jobilla/protoc-gen-go-appevents/jobilla/appevents";
+import "google/protobuf/descriptor.proto";
+
+package jobilla.appevents;
+
+extend google.protobuf.MessageOptions {
+  optional string event_name = 9900;
+}
