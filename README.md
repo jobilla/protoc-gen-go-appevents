@@ -2,7 +2,7 @@
 
 This `protoc` plugin is meant to be used together with https://github.com/jobilla/go-app-events.
 
-It enables the use of an `appevents.event_name` option on messages, which
+It enables the use of a `jobilla.appevents.event_name` option on messages, which
 will generate a `StringType` method for your message's generated Go struct,
 making it compliant with the `Message` interface from the library.
 
@@ -13,7 +13,7 @@ and archive this tool during 2023 as we migrate over to [CloudEvents](https://cl
 ## Installation
 
 We recommend using [Buf](https://buf.build) to generate your protobuf code.
-To use the tool, you will need the `appevents/options.proto` from this library.
+To use the tool, you will need the `jobilla/appevents/options.proto` from this library.
 This is published on Buf, and you can import it from your `buf.yaml`:
 
 ```yaml
