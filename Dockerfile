@@ -9,7 +9,8 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o protoc-gen-go-appevents
+ENV CGO_ENABLED=0
+RUN go build -ldflags="-s -w" -o protoc-gen-go-appevents
 
 FROM scratch
 
