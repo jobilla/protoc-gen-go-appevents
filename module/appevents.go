@@ -3,7 +3,7 @@ package module
 import (
 	"html/template"
 
-	"github.com/jobilla/protoc-gen-go-appevents/appevents"
+	"github.com/jobilla/protoc-gen-go-appevents/jobilla/appevents"
 	pgs "github.com/lyft/protoc-gen-star/v2"
 	pgsgo "github.com/lyft/protoc-gen-star/v2/lang/go"
 )
