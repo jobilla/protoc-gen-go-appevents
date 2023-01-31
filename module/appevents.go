@@ -2,6 +2,7 @@ package module
 
 import (
 	"html/template"
+	"strings"
 
 	"github.com/jobilla/protoc-gen-go-appevents/jobilla/appevents"
 	pgs "github.com/lyft/protoc-gen-star/v2"
@@ -61,7 +62,9 @@ func (m *Module) Execute(targets map[string]pgs.File, pkgs map[string]pgs.Packag
 				return ""
 			}
 
-			return eventName
+			// we need to replace single backslashes with double backslashes, such that the generated Go code
+			// gets a correct string representation; i.e `return "Foo\\Bar"` rather than `return "Foo\Bar"`.
+			return strings.ReplaceAll(eventName, "\\", "\\\\")
 		},
 	})
 
