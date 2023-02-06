@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jobilla\\Protobuf\\AppEvents\\": "jobilla/Protobuf/AppEvents"
+            "GPBMetadata\\Jobilla\\Appevents\\": "jobilla/Protobuf/AppEvents"
         }
     },
     "authors": [
