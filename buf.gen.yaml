@@ -3,3 +3,9 @@ plugins:
   - remote: buf.build/library/plugins/go:v1.27.1-1
     out: .
     opt: paths=source_relative
+  - remote: buf.build/protocolbuffers/plugins/php:v21.8.0-1
+    out: paths=source_relative
+  - remote: buf.build/grpc/plugins/php:v1.50.0-1
+    out: paths=source_relative
+  - name: php-grpc-server
+    out: paths=source_relative
