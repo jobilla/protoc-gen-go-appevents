@@ -1,5 +1,8 @@
 syntax="proto3";
 option go_package="github.com/jobilla/protoc-gen-go-appevents/jobilla/appevents";
+option php_namespace = "Jobilla\\Protobuf\\AppEvents";
+option php_metadata_namespace = "Jobilla\\Protobuf\\AppEvents\\Metadata";
+
 import "google/protobuf/descriptor.proto";
 
 package jobilla.appevents;

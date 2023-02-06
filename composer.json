@@ -1,0 +1,21 @@
+{
+    "name": "jobilla/protoc-gen-appevents",
+    "description": "Appevents plugin for protobuf",
+    "type": "library",
+    "require": {
+        "google/protobuf": "^3.21"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jobilla\\Protobuf\\AppEvents\\": "jobilla/Protobuf/AppEvents"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leo Sjoberg",
+            "email": "leo.sjoberg@jobilla.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
